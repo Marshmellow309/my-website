@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+</head>
+<body>
+    <div class="demo"></div><input type="text" onchange="uppercase()">
+    <button id="demo">click me</button>
+    <p id="demo"></p>
+    
+    <script>
+       const paragraph = document.createElement("p")
+       const node = document.createTextNode("this is a new text")
+
+       paragraph.appendChild(node);
+
+       const element = document.getElementById("demo");
+       element.appendChild(paragraph);
+       
+       
+       
+       //  document.getElementById("demo").style.color = "pink"
+
+         document.getElementById("demo").addEventListener("click", displayDate, true);
+
+         function displayDate(){
+            document.getElementById("demo").innerHTML = Date(true);
+         }
+
+         //element.addEventListener(event, function, usecapture);
+         
+
+
+    </script>
+   
+</body>
+</html>

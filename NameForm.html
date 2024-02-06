@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="NameForm.css">
+</head>
+<body>
+    <div id="todo-container">
+        <h2>My Todo List</h2>
+        <ul id="todo-list"></ul>
+        <input type="text" id="new-task" placeholder="Add a new task">
+        <button onclick="addTask()">SAVE</button>
+    </div>
+
+    <script>
+        function addTask() {
+            var taskInput = document.getElementById("new-task");
+            var taskText = taskInput.value;
+
+
+            var todoList = document.getElementById("todo-list");
+
+            var li = document.createElement("li");
+            li.className = "todo-item";
+            li.innerHTML = `
+                <span>${taskText}</span>
+                <button class="delete-button" onclick="deleteTask(this)"> x </button>
+            `;
+
+            todoList.appendChild(li);
+
+            taskInput.value = "";
+        }
+
+        function deleteTask(button) {
+            var listItem = button.parentNode;
+            var todoList = document.getElementById("todo-list");
+            todoList.removeChild(listItem);
+        }
+    </script>
+</body>
+</html>
