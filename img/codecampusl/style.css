@@ -1,0 +1,83 @@
+text-alignment
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: left;
+}
+
+h3{
+    text-align: right;
+}
+
+text-align-last
+p.a {
+    text-align-last: right;
+}
+
+p.b {
+    text-align-last: center ;
+}
+
+p.c {
+    text-align-last: justify;
+}
+
+Text Direction
+p {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+img.a {
+    vertical-align: baseline;
+}
+
+img.b {
+    vertical-align: text-top;
+}
+
+img.c {
+    vertical-align: text-bottom;
+}
+
+Text-decoration
+h {
+    text-decoration-line: overline;
+}
+
+h2 {
+    text-decoration-line: line-through;
+}
+
+h3 {
+    text-decoration-line: underline;
+}
+
+p {
+    text-decoration-line: overline underline;
+}
+
+h1 {
+    text-decoration-line: overline;
+    text-decoration-color: red;
+}
+
+h2 {
+    text-decoration-line: line-through;
+    text-decoration-color: blue;
+}
+
+h3 {
+    text-decoration-line: underline;
+    text-decoration-color: green;
+}
+
+p {
+    text-decoration-line: overline underline;
+    text-decoration-line: purple;
+}
+
+
+

@@ -1,0 +1,126 @@
+/* desktop */
+body{
+    background-color: grey;
+}
+
+nav{
+    background-color: rgb(255, 148, 174);
+    display: block;
+    min-height: 40px;
+    font-size: 15px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    outline: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.item{
+    flex: 0 0 30%;
+    height: 300px;
+    background-color: rgb(71, 108, 85);
+    outline: 1px solid orange;
+    margin-top: 10px;
+}
+
+.item-img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* tab */
+@media screen and (max-width: 800px){
+    body{
+        background-color: yellow;
+    }
+
+    nav{
+        background-color: rgb(255, 148, 174);
+        margin: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        min-height: 40px;
+        align-items: center;
+        font-size: 25px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: ;
+        list-style-type: none;
+    }
+    
+    .container{
+        width: 90%;
+        margin: 0 auto;
+        outline: 1px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #01335c;
+    }
+    
+    .item{
+        flex: 0 0 45%;
+        height: 300px;
+        background-color: rgb(166, 238, 194);
+        outline: 1px solid orange;
+        margin-top: 10px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 400px){
+    body{
+        background-color: red;
+    }
+
+    nav{
+        background-color: rgb(255, 148, 174);
+        min-height: 60px;
+        font-size: 20px;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    .li{
+        margin: 20px;
+        font-size: 30px;
+    }
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        outline: 1px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #01335c;
+    }
+    
+    .item{
+        flex: 0 0 90%;
+        height: 300px;
+        background-color: rgb(166, 238, 194);
+        outline: 1px solid orange;
+        margin-top: 10px;
+    }
+}
+

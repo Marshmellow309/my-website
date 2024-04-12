@@ -24,7 +24,7 @@ const [a, b, ...rest] = numbers
 console.log(rest)
 
 const person = {
-    name: 'john'
+    name: 'john',
     age: 44,
     height: 4.4,
     gender: 'male',
